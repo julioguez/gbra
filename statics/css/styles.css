@@ -14,10 +14,15 @@ body
 /* classes */
 .button-menu
 {
+    display: none;
     left: .5em;
     margin-top: -10px;
     position: absolute;
     top: 50%;
+}
+.company
+{
+    margin-top: 1.7em;
 }
 .header
 {
@@ -42,16 +47,34 @@ body
 }
 .menu
 {
-    display: none;
+    background: #ddd;
+    /*display: none;*/
+    left: -120px;
+    position: absolute;
+    top: 3.55em;
+    -webkit-transition: 1s;
+}
+.isActive
+{
+    display: block;
+    left: 0;
 }
 .menu-link
 {
-    font-weight: 300;
+    display: block;
+    font-weight: 700;
+    padding: .3em 1em;
+}
+.menu-link:hover
+{
+    background: #2c3e50;
+    color: #ecf0f1;
 }
 .menu-list
 {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 .menu-listItem
 {
@@ -59,6 +82,34 @@ body
 
 /* id's */
 
+
+/* media queries */
+@media screen and (min-width :767px)
+{
+    .button-menu
+    {
+        display: none;
+    }
+    .menu
+    {
+        left: initial;
+        right: 0;
+        width: 100%;
+    }
+    .menu-link
+    {
+        font-weight: 700;
+    }
+    .menu-link:hover
+    {
+        background: #2c3e50;
+        color: #ecf0f1;
+    }
+    .menu-listItem
+    {
+        display: inline-block;
+    }
+}
 
 /* font icons */
 @font-face {
