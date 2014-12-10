@@ -15,11 +15,38 @@ body
 {
     background-image: url('../img/pattern01.png');
     padding-top: 3em;
+    text-align: center;
 }
 .about-container
 {
     padding: 0 2em 1em;
     color: #ecf0f1;
+}
+.about-image
+{
+    margin: 0;
+    padding: 0;
+}
+.about-logo
+{
+    border: .5em solid #7f8c8d;
+    border-radius: 50%;
+    text-align: center;
+    transition-property:width,height,transform,background,font-size,opacity;
+    transition-duration:1s,1s,1s,1s,1s,1s;
+    -webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+    -o-transition-property:width,height,-o-transform,background,font-size,opacity;
+    -o-transition-duration:1s,1s,1s,1s,1s,1s;
+    -moz-transition-property:width,height,-o-transform,background,font-size,opacity;
+    -moz-transition-duration:1s,1s,1s,1s,1s,1s;
+}
+.about-logo:hover
+{
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity:1;
 }
 .header
 {
