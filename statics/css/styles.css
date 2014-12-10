@@ -1,3 +1,10 @@
+/* utilities */
+.u-title
+{
+    font-weight: 300;
+}
+
+/* tags */
 body
 {
   font-size: 16px;
@@ -6,7 +13,13 @@ body
 /* classes */
 .about
 {
-    margin-top: 3.5em;
+    background-image: url('../img/pattern01.png');
+    padding-top: 3em;
+}
+.about-container
+{
+    padding: 0 2em 1em;
+    color: #ecf0f1;
 }
 .header
 {
@@ -33,7 +46,7 @@ body
 }
 .nav-item a
 {
-    background: #2c3e50;
+    background: #7f8c8d;
     color: #ecf0f1;
     display: block;
     font-weight: 300;
@@ -63,12 +76,12 @@ body
 /* mobile navigation */
 .nav-mobile
 {
-    background: #34495e;
-    border-radius: 5px;
+    background: #555;
+    /*border-radius: 5px;*/
     color: #fff;
     cursor: pointer;
     display: none; /* Hide from browsers that don't support media queries */
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 300;
     line-height: 40px;
     height: 40px;
@@ -97,6 +110,7 @@ body
     {
         display: block;
         position: fixed;
+        border-radius: 0 5px 5px 5px;
     }
     .nav
     {
@@ -115,7 +129,7 @@ body
     }
     .nav-item a
     {
-        background: #34495e;
+        background: #555;
         padding: 10px;
     }
     .nav-item:first-child a
@@ -135,9 +149,9 @@ body
     }
     .nav-mobile-open
     {
-        border-radius: 5px 5px 0 0;
-        -webkit-border-radius: 5px 5px 0 0;
-        -moz-border-radius: 5px 5px 0 0;
+        border-radius: 0 5px 0 0;
+        -webkit-border-radius: 0 5px 0 0;
+        -moz-border-radius: 0 5px 0 0;
     }
     .nav-title
     {
