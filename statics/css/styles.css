@@ -16,6 +16,7 @@ body
 {
     display: none;
     left: .5em;
+    margin-left: 20px;
     margin-top: -10px;
     position: absolute;
     top: 50%;
